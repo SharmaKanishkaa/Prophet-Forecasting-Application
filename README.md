@@ -1,6 +1,4 @@
-# Prophet-Forecasting-Application
-
-## Web app developed with Streamlit & Prophet
+# Forecasting Web app developed with Streamlit & Prophet
 
 This application is a front end for forecasting using Prophet library. 
 
