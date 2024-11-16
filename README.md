@@ -9,6 +9,9 @@ The app structure follow the process of building and evaluating a forecast:
 Upload a .csv file in form of a timeseries. Even though Prophet requires the date column o be labeled **ds** and the value column as **y** , it is not necessary to pre-proces the file to comply with this rule, since it is taken care of during the upload in the app. 
 The dataset can as well contain multiple columns, of which only the chosen one in the selector will be used for the prediction.
 After loading data a checkbox will show up to visualize the dataframe, include a statistical description and create a plot of the timeseries. 
+
+![Load](https://github.com/SharmaKanishkaa/Prophet-Forecasting-Application/blob/main/1.png)
+
 ### 2. Configure the model settings
 
 Once loaded the data, the app allow the configuration of multiple parameters:
@@ -21,6 +24,8 @@ Yearly: will evaluate trend within months of the year( january to december)
 -**Growth model**: choose beetwen linear growth or logistic growth, to specify  carrying capacity, for example if there is a maximum achievable point. The app allows then to specify cap and floor of the logistic model.
 - **Holidays**: add holidays to the model. Available countries at the moment: Italy, Spain, France, United States, Germany, Ukraine.
 - **Hyperparameters**: Change the scale of the changepoints or holidays. It impacts the flexibility of the model. 
+
+![model](https://github.com/SharmaKanishkaa/Prophet-Forecasting-Application/blob/main/2.png)
 
 ### 3. Fit the model and predict future
 - Initialize the model with the settings configured above  (Fit)
@@ -39,6 +44,8 @@ Runs the model with all the combinations possible within the matrix of coefficie
 
 - Export forecast(.csv) : will generate a link to download the dataframe with predictions and confidence intervals.
 - Export model metrics (.csv): will generate a link to downloa d the dataframe or the cross-validation
-- Export model configuration (.json): will export  the configuration of the model for reproducibility of the results.   
+- Export model configuration (.json): will export  the configuration of the model for reproducibility of the results.
+- 
+  ![final](https://github.com/SharmaKanishkaa/Prophet-Forecasting-Application/blob/main/3.png) 
 
 ____________
